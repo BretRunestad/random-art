@@ -13,9 +13,9 @@ class Expression:
         value = 1
         for (command, coord) in self.commands:
             if command == "one" and coord == "x":
-                value = cos(pi * sin(pow(x, 2)))
+                value = pi * cos(pi * sin(pow(x, 2)))
             elif command == "one" and coord == "y":
-                value = sin(pi * cos(pow(y, 4)))
+                value = pi * sin(pi * cos(pow(y, 4)))
             elif command == "two" and coord == "x":
                 value *= pow(cos(pi * x), 2)
             elif command == "two" and coord == "y":
